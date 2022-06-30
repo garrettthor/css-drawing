@@ -1,0 +1,231 @@
+:root {
+    --face-color: rgb(235, 235, 235);
+    --eye-color: white;
+    --background-color: rgb(0, 187, 255);
+    --brow-color: #d70000;
+    --mouth-color: #71acc8;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.forky {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.face {
+    background-color: var(--face-color);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 65% 30% 65% 28%;
+    top: -135px;
+    left: -147px;
+    transform: rotate(-45deg);
+}
+
+.face-mask {
+    width: 300px;
+    height: 60px;
+    background-color: var(--background-color);
+    position: absolute;
+    top: -160px;
+    left: -147px;
+}
+
+.fork1 {
+    background-color: var(--face-color);
+    width: 122px;
+    height: 77px;
+    position: absolute;
+    border-radius: 100% 0% 77% 23% / 77% 0% 100% 23%;
+    top: -130px;
+    left: -125px;
+    transform: rotate(-42deg);
+}
+
+.fork2 {
+    background-color: var(--face-color);
+    width: 122px;
+    height: 77px;
+    position: absolute;
+    border-radius: 100% 0% 77% 23% / 77% 0% 100% 23%;
+    top: -137px;
+    left: -80px;
+    transform: rotate(-50deg);
+}
+
+.fork3 {
+    background-color: var(--face-color);
+    width: 122px;
+    height: 77px;
+    position: absolute;
+    border-radius: 100% 0% 77% 23% / 77% 0% 100% 23%;
+    top: -137px;
+    left: -30px;
+    transform: rotate(50deg) rotateY(180deg);
+}
+
+.fork4 {
+    background-color: var(--face-color);
+    width: 122px;
+    height: 77px;
+    position: absolute;
+    border-radius: 100% 0% 77% 23% / 77% 0% 100% 23%;
+    top: -130px;
+    left: 10px;
+    transform: rotate(40deg) rotateY(180deg);
+}
+
+.eye1 {
+    background-color: var(--eye-color);
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: -37px;
+    left: -109px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #888787;
+}
+
+.pupil1 {
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #888787;
+}
+
+.eye2 {
+    background-color: var(--eye-color);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -13px;
+    left: 12px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #888787;
+}
+
+.pupil2 {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #888787;
+}
+
+.mouth1 {
+    border: 15px solid var(--mouth-color);
+    width: 120px;
+    height: 81px;
+    position: absolute;
+    top: 65px;
+    left: -65px;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    clip-path: polygon(0 42%, 100% 25%, 100% 100%, 0 100%);
+}
+
+.mouth2 {
+    border: 15px solid var(--mouth-color);
+    width: 120px;
+    height: 31px;
+    position: absolute;
+    top: 85px;
+    left: -65px;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    clip-path: polygon(0 42%, 100% 25%, 100% 100%, 0 100%);
+}
+
+.brow {
+    border: 15px solid var(--brow-color);
+    width: 179px;
+    height: 35px;
+    position: absolute;
+    top: -87px;
+    left: -95px;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    transform: rotate(190deg);
+}
+
+.handle {
+    width: 80px;
+    height: 100px;
+    background: var(--face-color);
+    position: absolute;
+    top: 180px;
+    left: -37px;
+}
+
+.handle-mask1 {
+    border-radius: 87% 13% 100% 0% / 0% 100% 0% 100%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 183px;
+    left: -124px;
+}
+
+.handle-mask2 {
+    border-radius: 87% 13% 100% 0% / 0% 100% 0% 100%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 181px;
+    left: 32px;
+    transform: rotateY(180deg);;
+}
+
+.brow-mask1 {
+    width: 22px;
+    height: 14px;
+    background: var(--brow-color);
+    position: absolute;
+    border-radius: 50%;
+    top: -78px;
+    left: -89px;
+    transform: rotate(-13deg);
+}
+
+.brow-mask2 {
+    width: 16px;
+    height: 10px;
+    background: var(--brow-color);
+    position: absolute;
+    border-radius: 50%;
+    top: -44px;
+    left: 94px;
+    transform: rotate(13deg);
+}
+
+.mouth-mask1{
+    width: 16px;
+    height: 14px;
+    background: var(--mouth-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 104px;
+    left: -65px;
+}
+
+.mouth-mask2 {
+    width: 15px;
+    height: 14px;
+    background: var(--mouth-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 87px;
+    left: 70px;
+}
